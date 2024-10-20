@@ -12,34 +12,91 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 import HeroCasaNegrano from '~/components/widgets/HeroCasaNegrano.astro';
 
-import img1 from '../../assets/images/bilocale/IMG_8928.webp';
-import img2 from '../../assets/images/bilocale/IMG_8929.webp';
-import img3 from '../../assets/images/bilocale/IMG_8930.webp';
-import img4 from '../../assets/images/bilocale/IMG_8931.webp';
-import img5 from '../../assets/images/bilocale/IMG_8932.webp';
-import img6 from '../../assets/images/bilocale/IMG_8933.webp';
-import img7 from '../../assets/images/bilocale/IMG_8934.webp';
-import img8 from '../../assets/images/bilocale/IMG_8935.webp';
-import img9 from '../../assets/images/bilocale/IMG_8936.webp';
-import img10 from '../../assets/images/bilocale/IMG_8937.webp';
-import img11 from '../../assets/images/bilocale/IMG_8939.webp';
-import img12 from '../../assets/images/bilocale/IMG_8940.webp';
-import img13 from '../../assets/images/bilocale/IMG_8941.webp';
-import img14 from '../../assets/images/bilocale/IMG_8942.webp';
-import img15 from '../../assets/images/bilocale/IMG_8943.webp';
-import img16 from '../../assets/images/bilocale/IMG_8944.webp';
-import img17 from '../../assets/images/bilocale/IMG_8945.webp';
-import img18 from '../../assets/images/bilocale/IMG_8946.webp';
-import img19 from '../../assets/images/bilocale/IMG_8947.webp';
-import img20 from '../../assets/images/bilocale/IMG_8948.webp';
+import imgBilocale1 from '../../assets/images/bilocale/IMG_8928.webp';
+import imgBilocale2 from '../../assets/images/bilocale/IMG_8929.webp';
+import imgBilocale3 from '../../assets/images/bilocale/IMG_8930.webp';
+import imgBilocale4 from '../../assets/images/bilocale/IMG_8931.webp';
+import imgBilocale5 from '../../assets/images/bilocale/IMG_8932.webp';
+import imgBilocale6 from '../../assets/images/bilocale/IMG_8933.webp';
+import imgBilocale7 from '../../assets/images/bilocale/IMG_8934.webp';
+import imgBilocale8 from '../../assets/images/bilocale/IMG_8935.webp';
+import imgBilocale9 from '../../assets/images/bilocale/IMG_8936.webp';
+import imgBilocale10 from '../../assets/images/bilocale/IMG_8937.webp';
+import imgBilocale11 from '../../assets/images/bilocale/IMG_8939.webp';
+import imgBilocale12 from '../../assets/images/bilocale/IMG_8940.webp';
+import imgBilocale13 from '../../assets/images/bilocale/IMG_8941.webp';
+import imgBilocale14 from '../../assets/images/bilocale/IMG_8942.webp';
+import imgBilocale15 from '../../assets/images/bilocale/IMG_8943.webp';
+import imgBilocale16 from '../../assets/images/bilocale/IMG_8944.webp';
+import imgBilocale17 from '../../assets/images/bilocale/IMG_8945.webp';
+import imgBilocale18 from '../../assets/images/bilocale/IMG_8946.webp';
+import imgBilocale19 from '../../assets/images/bilocale/IMG_8947.webp';
+import imgBilocale20 from '../../assets/images/bilocale/IMG_8948.webp';
+
+import imgTrilocale1 from '../../assets/images/trilocale/IMG_8950.webp';
+import imgTrilocale2 from '../../assets/images/trilocale/IMG_8951.webp';
+import imgTrilocale3 from '../../assets/images/trilocale/IMG_8952.webp';
+import imgTrilocale4 from '../../assets/images/trilocale/IMG_8954.webp';
+import imgTrilocale5 from '../../assets/images/trilocale/IMG_8955.webp';
+import imgTrilocale6 from '../../assets/images/trilocale/IMG_8956.webp';
+import imgTrilocale7 from '../../assets/images/trilocale/IMG_8957.webp';
+import imgTrilocale8 from '../../assets/images/trilocale/IMG_8958.webp';
+import imgTrilocale9 from '../../assets/images/trilocale/IMG_8959.webp';
+import imgTrilocale10 from '../../assets/images/trilocale/IMG_8961.webp';
+import imgTrilocale11 from '../../assets/images/trilocale/IMG_8962.webp';
+import imgTrilocale12 from '../../assets/images/trilocale/IMG_8963.webp';
+import imgTrilocale13 from '../../assets/images/trilocale/IMG_8964.webp';
+import imgTrilocale14 from '../../assets/images/trilocale/IMG_8965.webp';
+import imgTrilocale15 from '../../assets/images/trilocale/IMG_8969.webp';
+import imgTrilocale16 from '../../assets/images/trilocale/IMG_8970.webp';
+import imgTrilocale17 from '../../assets/images/trilocale/IMG_8971.webp';
+import imgTrilocale18 from '../../assets/images/trilocale/IMG_8972.webp';
 
 import imgCasa from '../../assets/images/casa.webp';
 
-const images = [
-  img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
-  img11, img12, img13, img14, img15, img16, img17, img18, img19, img20
+const imagesBilocale = [
+  imgBilocale1,
+  imgBilocale2,
+  imgBilocale3,
+  imgBilocale4,
+  imgBilocale5,
+  imgBilocale6,
+  imgBilocale7,
+  imgBilocale8,
+  imgBilocale9,
+  imgBilocale10,
+  imgBilocale11,
+  imgBilocale12,
+  imgBilocale13,
+  imgBilocale14,
+  imgBilocale15,
+  imgBilocale16,
+  imgBilocale17,
+  imgBilocale18,
+  imgBilocale19,
+  imgBilocale20,
 ];
 
+const imagesTrilocale = [
+  imgTrilocale1,
+  imgTrilocale2,
+  imgTrilocale3,
+  imgTrilocale4,
+  imgTrilocale5,
+  imgTrilocale6,
+  imgTrilocale7,
+  imgTrilocale8,
+  imgTrilocale9,
+  imgTrilocale10,
+  imgTrilocale11,
+  imgTrilocale12,
+  imgTrilocale13,
+  imgTrilocale14,
+  imgTrilocale15,
+  imgTrilocale16,
+  imgTrilocale17,
+  imgTrilocale18,
+];
 const metadata = {
   title: 'Casa Negrano - Holiday Housing - Appartamenti / Casa vacanze a Trento',
 };
@@ -63,7 +120,6 @@ const metadata = {
         },
       ]}
       isSticky,
-      
     />
   </Fragment>
 
@@ -89,9 +145,7 @@ const metadata = {
   <Content
     id="about"
     columns={3}
-    images={[
-      imgCasa,
-    ]}
+    images={[imgCasa]}
     items={[
       {
         icon: 'tabler:home-2',
@@ -115,9 +169,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight  sm:text-3xl mb-2">
-        Il tuo rifugio a Trento, tra natura e comfort
-      </h2>
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">Il tuo rifugio a Trento, tra natura e comfort</h2>
       <p>
         Situata a Villazzano, una tranquilla collina a soli 5 km dal centro di Trento, Casa Negrano offre due
         appartamenti accoglienti e confortevoli, ideali per chi desidera esplorare il Trentino o rilassarsi immerso
@@ -127,7 +179,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 "></div>
+      <div class="absolute inset-0 bg-blue-50"></div>
     </Fragment>
   </Content>
 
@@ -136,7 +188,7 @@ const metadata = {
     title="I nostri appartamenti"
     subtitle="Appartamenti accoglienti per ogni esigenza."
     isReversed
-    images={images}
+    images={imagesBilocale}
     items={[
       {
         title: 'Descrizione:',
@@ -155,7 +207,7 @@ const metadata = {
       },
       {
         title: 'Prezzi:',
-        description: 'A partire da € 115,00',
+        description: 'A partire da € 90,00',
         icon: 'tabler:currency-euro',
       },
     ]}
@@ -167,13 +219,13 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight  sm:text-3xl mb-2">
+      <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
         Ampio bilocale: <br /><span class="text-2xl">Camera Matrimoniale con balcone privato</span>
       </h3>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 "></div>
+      <div class="absolute inset-0 bg-blue-50"></div>
     </Fragment>
   </Content>
 
@@ -183,7 +235,7 @@ const metadata = {
     id="trilocale"
     isReversed
     isAfterContent={true}
-    images={images}
+    images={imagesTrilocale}
     items={[
       {
         title: 'Descrizione:',
@@ -202,7 +254,7 @@ const metadata = {
       },
       {
         title: 'Prezzi:',
-        description: 'A partire da € 150,00',
+        description: 'A partire da € 110,00',
         icon: 'tabler:currency-euro',
       },
     ]}
@@ -214,13 +266,13 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight  sm:text-3xl mb-2">
+      <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
         Ampio Trilocale: <br /><span class="text-2xl">2 camere e 2 bagni</span>
       </h3>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 "></div>
+      <div class="absolute inset-0 bg-blue-50"></div>
     </Fragment>
   </Content>
 
@@ -306,7 +358,7 @@ const metadata = {
       {
         title: 'Balcone privato',
         description:
-          'Troverai tutto ciò di cui hai bisogno per un soggiorno confortevole, con biancheria e asciugamani forniti per ogni ospite.',
+          "Goditi la vista e l'aria fresca dal balcone del tuo appartamento, perfetto per un momento di relax all'aperto.",
         icon: 'tabler:building-bridge-2',
       },
       {
