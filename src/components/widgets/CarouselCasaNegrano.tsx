@@ -15,7 +15,13 @@ export default function CarouselCasaNegrano({ images }: CarouselCasaNegranoProps
             <div className="p-1">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <img src={image.src} alt={`Carousel item ${index + 1}`} className="w-full h-full object-cover" />
+                  <img
+                    loading="lazy"
+                    src={image.src}
+                      // srcSet={`${image} 1x, ${image.replace('.webp', '@2x.webp')} 2x`}
+                    alt={`Carousel item ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
                 </CardContent>
               </Card>
             </div>
