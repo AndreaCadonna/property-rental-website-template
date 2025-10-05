@@ -76,6 +76,9 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
           ))
         }
       </div>
+      <div class="text-sm text-center md:text-left">
+        <Fragment set:html={footNote} />
+      </div>
 
       <!-- MAP -->
       <div class="md:col-span-12 lg:col-span-12 mt-6">
@@ -86,7 +89,8 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
           style="border:0;"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+          referrerpolicy="no-referrer-when-downgrade"
+        >
         </iframe>
       </div>
     </div>
@@ -113,10 +117,6 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
           ''
         )
       }
-
-      <div class="text-sm text-center md:text-left">
-        <Fragment set:html={footNote} />
-      </div>
-    </div> -->
+-->
   </div>
 </footer>

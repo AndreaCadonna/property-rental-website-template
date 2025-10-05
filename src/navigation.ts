@@ -5,12 +5,11 @@ export const headerData = {
     {
       text: 'Home',
       href: '/',
-      
     },
     // {
     //   text: 'Pages',
     //   links: [
-        
+
     //     {
     //       text: 'Contact',
     //       href: getPermalink('/contact'),
@@ -25,7 +24,6 @@ export const headerData = {
     //     },
     //   ],
     // }
-    
   ],
   actions: [],
 };
@@ -41,6 +39,10 @@ export const footerData = {
         { text: 'I nostri comfort', href: '#comfort' },
         { text: 'Testimonianze', href: '#testimonianze' },
       ],
+    },
+    {
+      title: 'Codici CIN',
+      links: [{ text: 'IT022205C2A7J22SB7' }, { text: 'IT022205C269BP38G3' }, { text: 'IT022205C2I72MMQXZ' }],
     },
   ],
   secondaryLinks: [
