@@ -34,7 +34,7 @@ export const footerData = {
       title: 'Link utili',
       links: [
         { text: 'Home', href: '#' },
-        { text: 'Su di noi', href: '#about' },
+        { text: 'Chi siamo', href: '#about' },
         { text: 'Appartamenti', href: '#bilocale' },
         { text: 'I nostri comfort', href: '#comfort' },
         { text: 'Testimonianze', href: '#testimonianze' },
