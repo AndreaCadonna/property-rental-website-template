@@ -9,6 +9,7 @@ import ApartmentsOverview from '~/components/home/ApartmentsOverview.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getRandomReviews } from '~/data/reviews';
 
 import '@/styles/globals.css';
 
@@ -17,6 +18,13 @@ const metadata = {
   description:
     'Appartamenti moderni per vacanze a Trento. Scegli tra bilocale, trilocale o suite deluxe. WiFi, parcheggio, cucina attrezzata. A 5 km dal centro.',
 };
+
+// Get 6 random reviews for testimonials section
+const randomReviews = getRandomReviews(6);
+const testimonials = randomReviews.map((review) => ({
+  testimonial: review.text,
+  name: review.username,
+}));
 ---
 
 <Layout metadata={metadata}>
@@ -119,32 +127,7 @@ const metadata = {
     id="testimonianze"
     title="Le testimonianze"
     subtitle="Scopri cosa dicono di noi i nostri ospiti."
-    testimonials={[
-      {
-        testimonial: `Casa moderna con ascensore e parcheggio, dotata di tutto il necessario e anche di più! C'è addirittura un adattatore per caricare qualsiasi tipo di cellulare. Franco e la moglie sono molto disponibili. La doccia è enorme e il materasso è comodissimo. Consigliatissimo!`,
-        name: 'Sara',
-      },
-      {
-        testimonial: `Molto pulito e di nuova qualità. Cucina ben attrezzata, c'è tutto! Materassi molto comodi. Tutto impeccabile! Proprietari molto gentili, sempre disponibili e che si sono fatti sentire da soli. Ci torneremmo subito! Siamo stati entusiasti. - Tradotto dal tedesco`,
-        name: 'Sebastian',
-      },
-      {
-        testimonial: `Appartamento grande e pulito. Tutto nuovo e ben organizzato. Confortevole`,
-        name: 'Giuseppina',
-      },
-      {
-        testimonial: `Struttura nuova e ben curata, proprietari deliziosi, ci torneremo sicuramente, consigliatissima!`,
-        name: 'Alessandro',
-      },
-      {
-        testimonial: `Stupenda esperienza. Il padrone di casa di una gentilezza e disponibilità eccezionali. Torneremo di sicuro!!!`,
-        name: 'Giuseppe',
-      },
-      {
-        testimonial: `Casa moderna con ascensore e parcheggio, dotata di tutto il necessario e anche di più! C'è addirittura un adattatore per caricare qualsiasi tipo di cellulare. Franco e la moglie sono molto disponibili. La doccia è enorme e il materasso è comodissimo. Consigliatissimo!`,
-        name: 'Sara',
-      },
-    ]}
+    testimonials={testimonials}
   />
 
   <!-- Call to Action Section -->
