@@ -244,6 +244,11 @@ export interface CommonContent {
     check_out: string;
     min_stay: string;
     nights: string;
+    wifi_included?: string;
+    ideal_for?: string;
+    parking_included?: string;
+    features?: string;
+    amenities?: string;
   };
   form: Record<string, string>;
   placeholders: Record<string, string>;
@@ -357,7 +362,68 @@ export interface ContactContent {
   };
 }
 
+/**
+ * Apartments page content structure
+ */
+export interface ApartmentsContent {
+  labels: {
+    guests: string;
+    bedrooms: string;
+    bathrooms: string;
+    size: string;
+    sqm: string;
+    features: string;
+    amenities: string;
+    ideal_for: string;
+    rooms: string;
+    gallery: string;
+    reviews: string;
+    benefits: string;
+  };
+  sections: {
+    overview: { title: string };
+    rooms: { title: string; subtitle: string };
+    gallery: { title: string; subtitle: string };
+    services: {
+      title: string;
+      subtitle: string;
+      core_services_title: string;
+      premium_services_title: string;
+    };
+    reviews: { title: string; subtitle: string };
+    benefits: { title: string; subtitle: string };
+    cta: { title: string; description: string; button: string };
+  };
+  rooms_section?: {
+    title: string;
+    subtitle: string;
+  };
+  card: {
+    view_details: string;
+    starting_from: string;
+    per_night: string;
+  };
+  comparison: {
+    title: string;
+    headers: Record<string, string>;
+  };
+  guest_card: {
+    title: string;
+    description: string;
+    cta: string;
+  };
+  testimonials?: {
+    title?: string;
+    subtitle?: string;
+    default?: Array<{
+      text: string;
+      name: string;
+    }>;
+  };
+}
+
 // Type-safe content getters
 export const getCommonContent = () => getContent<CommonContent>('common');
 export const getHomepageContent = () => getContent<HomepageContent>('homepage');
 export const getContactContent = () => getContent<ContactContent>('contact');
+export const getApartmentsContent = () => getContent<ApartmentsContent>('apartments');

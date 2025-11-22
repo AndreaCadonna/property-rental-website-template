@@ -53,6 +53,11 @@ labels:
   check_out: "Check-out"
   min_stay: "Soggiorno minimo"
   nights: "notti"
+  wifi_included: "WiFi incluso"
+  ideal_for: "Ideale per"
+  parking_included: "Parcheggio incluso"
+  features: "Caratteristiche"
+  amenities: "Servizi"
 
 # -----------------------------------------------------------------------------
 # Form Labels

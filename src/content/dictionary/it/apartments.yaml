@@ -30,6 +30,13 @@ sections:
   rooms:
     title: "Le stanze dell'appartamento"
     subtitle: "Scopri ogni ambiente"
+
+# -----------------------------------------------------------------------------
+# Rooms Section (for property pages)
+# -----------------------------------------------------------------------------
+rooms_section:
+  title: "Gli spazi dell'appartamento"
+  subtitle: "Scopri ogni ambiente nel dettaglio, pensato per offrirti comfort e funzionalità"
   gallery:
     title: "Galleria fotografica"
     subtitle: "Esplora l'appartamento"

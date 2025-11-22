@@ -4,9 +4,10 @@
  * Displays all available apartments in a responsive grid
  *
  * Content is loaded from: src/content/dictionary/{locale}/homepage.yaml
+ * Properties are loaded from: src/content/properties/*.yaml
  */
 import ApartmentCard from './ApartmentCard.astro';
-import { apartments } from '~/data/apartments';
+import { getProperties } from '~/utils/properties';
 import { getHomepageContent, getCommonContent } from '~/utils/content';
 import { getContactEmail } from '~/config';
 
@@ -15,6 +16,9 @@ const homepage = await getHomepageContent();
 const common = await getCommonContent();
 const content = homepage.apartments;
 const email = getContactEmail();
+
+// Load properties from YAML
+const properties = await getProperties();
 ---
 
 <section id={content.section_id} class="py-16 md:py-20 lg:py-28 bg-gradient-to-br from-luxury-cream via-luxury-white to-luxury-beige">
@@ -32,7 +36,7 @@ const email = getContactEmail();
 
     <!-- Apartments Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-      {apartments.map((apartment) => <ApartmentCard apartment={apartment} />)}
+      {properties.map((property) => <ApartmentCard property={property} />)}
     </div>
 
     <!-- Additional Info Banner -->
@@ -94,21 +98,21 @@ const email = getContactEmail();
           </thead>
           <tbody class="divide-y divide-luxury-sand">
             {
-              apartments.map((apartment, index) => (
+              properties.map((property, index) => (
                 <tr class={index % 2 === 0 ? 'bg-luxury-beige/30' : 'bg-luxury-white'}>
                   <td class="px-6 py-4">
                     <div>
-                      <p class="font-medium text-luxury-black">{apartment.name.replace('Appartamento ', '')}</p>
-                      <p class="text-sm text-luxury-graphite">{apartment.subtitle}</p>
+                      <p class="font-medium text-luxury-black">{property.name.replace('Appartamento ', '')}</p>
+                      <p class="text-sm text-luxury-graphite">{property.subtitle}</p>
                     </div>
                   </td>
-                  <td class="px-6 py-4 text-center text-luxury-black font-medium">{apartment.capacity}</td>
-                  <td class="px-6 py-4 text-center text-luxury-black font-medium">{apartment.size} {common.labels.sqm}</td>
-                  <td class="px-6 py-4 text-center text-luxury-graphite">{apartment.bedrooms}</td>
-                  <td class="px-6 py-4 text-center text-luxury-graphite">{apartment.bathrooms}</td>
+                  <td class="px-6 py-4 text-center text-luxury-black font-medium">{property.capacity.guests}</td>
+                  <td class="px-6 py-4 text-center text-luxury-black font-medium">{property.size.value} {property.size.unit === 'sqm' ? common.labels.sqm : 'ft²'}</td>
+                  <td class="px-6 py-4 text-center text-luxury-graphite">{property.capacity.bedrooms}</td>
+                  <td class="px-6 py-4 text-center text-luxury-graphite">{property.capacity.bathrooms}</td>
                   <td class="px-6 py-4 text-center">
                     <a
-                      href={`/appartamenti/${apartment.slug}`}
+                      href={`/appartamenti/${property.slug}`}
                       class="inline-flex items-center gap-1 text-luxury-gold hover:text-luxury-bronze font-medium transition-all duration-400"
                     >
                       <span class="text-sm uppercase tracking-wide">{common.buttons.learn_more}</span>
