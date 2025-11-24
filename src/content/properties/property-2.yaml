@@ -1,0 +1,167 @@
+# =============================================================================
+# Property Configuration: Property 2 - Two Bedroom Apartment (Template)
+# =============================================================================
+id: property-2
+slug: property-2
+published: true
+order: 2
+
+name: "Two Bedroom Apartment"
+subtitle: "Spacious apartment with 2 bedrooms and 2 bathrooms"
+
+description: >
+  This apartment offers two bedrooms (one double and one twin), two full
+  bathrooms, and a spacious living room with well-equipped kitchen. The
+  generous spaces and smart layout make it perfect for families or groups
+  of friends seeking more privacy and comfort during their stay.
+
+shortDescription: "Spacious apartment ideal for families"
+
+# -----------------------------------------------------------------------------
+# Capacity & Size
+# -----------------------------------------------------------------------------
+capacity:
+  guests: 4
+  bedrooms: "1 double bedroom + 1 twin bedroom"
+  bathrooms: "2 bathrooms with shower"
+  beds:
+    double: 1
+    single: 2
+    sofa: 1
+
+size:
+  value: 120
+  unit: sqm
+
+# -----------------------------------------------------------------------------
+# Images
+# -----------------------------------------------------------------------------
+images:
+  hero: "hero.svg"
+  thumbnail: "thumbnail.svg"
+  gallery: "property-2"
+
+# -----------------------------------------------------------------------------
+# Rooms
+# -----------------------------------------------------------------------------
+rooms:
+  - name: "Master Bedroom"
+    description: >
+      Elegant master bedroom with built-in wardrobes and floor heating.
+      Modern furnishings and relaxing colors create a welcoming atmosphere.
+      The room offers all the space needed for a comfortable stay and
+      includes a large wardrobe.
+    image: "master-bedroom.svg"
+    amenities:
+      - "Double bed"
+      - "Built-in wardrobe"
+      - "Floor climate control"
+      - "Large windows"
+
+  - name: "Twin Bedroom"
+    description: >
+      Spacious room with two single beds, perfect for children or friends.
+      Equipped with large wardrobe and desk, it offers a bright and
+      comfortable environment. Beds can be joined on request to create
+      a second double bed.
+    image: "twin-bedroom.svg"
+    amenities:
+      - "Two single beds"
+      - "Wardrobe"
+      - "Floor climate control"
+
+  - name: "Living Room"
+    description: >
+      Large open-space living room with dining and relaxation areas. The
+      comfortable sofa can accommodate additional guests, while the smart
+      TV and fast WiFi ensure entertainment. Large windows fill the space
+      with natural light.
+    image: "living-room.svg"
+    amenities:
+      - "Sofa bed"
+      - "Smart TV"
+      - "Dining table"
+      - "Relaxation area"
+      - "Floor climate control"
+
+  - name: "Kitchen"
+    description: >
+      Modern and spacious kitchen, perfectly equipped to prepare meals for
+      the whole family. Includes latest generation appliances, ample
+      counter space, and pantry. The central island offers additional
+      space for food preparation and can serve as a breakfast area.
+    image: "kitchen.svg"
+    amenities:
+      - "Refrigerator"
+      - "Induction cooktop"
+      - "Electric oven"
+      - "Dishwasher"
+      - "Microwave"
+      - "Coffee machine"
+      - "Pots and dishes"
+
+  - name: "Main Bathroom"
+    description: >
+      Spacious main bathroom with large shower, sink, and premium finishes.
+      Includes washing machine for convenience during extended stays.
+      Modern design with high-quality ceramics.
+    image: "main-bathroom.svg"
+    amenities:
+      - "Shower"
+      - "Sink"
+      - "Washing machine"
+      - "Hairdryer"
+      - "Courtesy set"
+
+  - name: "Second Bathroom"
+    description: >
+      Second bathroom, ideal for ensuring privacy and comfort to all
+      guests. Equipped with all necessary amenities and modern finishes.
+    image: "second-bathroom.svg"
+    amenities:
+      - "Sink"
+      - "Hairdryer"
+      - "Towels provided"
+
+  - name: "Balcony"
+    description: >
+      Private balcony equipped with table and chairs, perfect for enjoying
+      morning coffee or evening relaxation while admiring the panoramic
+      views. An ideal outdoor space for moments of tranquility.
+    image: "balcony.svg"
+    amenities:
+      - "Table"
+      - "Chairs"
+      - "Panoramic view"
+
+# -----------------------------------------------------------------------------
+# Features & Amenities
+# -----------------------------------------------------------------------------
+features:
+  - "High-speed WiFi"
+  - "Parking included"
+  - "Two bathrooms"
+  - "Spacious equipped kitchen"
+  - "Floor heating and cooling"
+  - "Smart TV"
+  - "Washing machine"
+  - "Linens and towels included"
+  - "Elevator"
+  - "Safe"
+  - "Cots and cribs available"
+
+# -----------------------------------------------------------------------------
+# Target Audience
+# -----------------------------------------------------------------------------
+idealFor:
+  - "Families with children"
+  - "Groups of friends"
+  - "Extended stays"
+  - "Those seeking space and privacy"
+
+# -----------------------------------------------------------------------------
+# SEO
+# -----------------------------------------------------------------------------
+seo:
+  title: "Two Bedroom Apartment - 4 Guests"
+  description: "Spacious apartment with 2 bedrooms, 2 bathrooms, and large spaces. Ideal for families and groups."

@@ -1,0 +1,194 @@
+# =============================================================================
+# Property Configuration: Property 3 - Deluxe Suite (Template)
+# =============================================================================
+id: property-3
+slug: property-3
+published: true
+order: 3
+
+name: "Deluxe Suite"
+subtitle: "Luxury apartment with 4 bedrooms and 2 bathrooms"
+
+description: >
+  Our most spacious apartment offers four large bedrooms: two double
+  (one with romantic private balcony) and two twin, perfect for large
+  families or groups. The home is completed by two modern bathrooms
+  with showers, a fully equipped kitchen, and a large living room to
+  relax together. The apartment is designed for families, with the
+  possibility to add cots and cribs for little ones.
+
+shortDescription: "Deluxe suite for large groups and families"
+
+# -----------------------------------------------------------------------------
+# Capacity & Size
+# -----------------------------------------------------------------------------
+capacity:
+  guests: 8
+  bedrooms: "2 double bedrooms + 2 twin bedrooms"
+  bathrooms: "2 bathrooms with shower"
+  beds:
+    double: 2
+    single: 4
+    sofa: 1
+
+size:
+  value: 180
+  unit: sqm
+
+# -----------------------------------------------------------------------------
+# Images
+# -----------------------------------------------------------------------------
+images:
+  hero: "hero.svg"
+  thumbnail: "thumbnail.svg"
+  gallery: "property-3"
+
+# -----------------------------------------------------------------------------
+# Rooms
+# -----------------------------------------------------------------------------
+rooms:
+  - name: "Master Bedroom with Balcony"
+    description: >
+      The main master bedroom is a true gem, with spacious built-in
+      wardrobe and exclusive access to a private balcony. Perfect for
+      moments of intimacy, it offers an elegant and relaxing environment
+      with all modern comforts. The private balcony is ideal for starting
+      the day with a view of the mountains.
+    image: "master-bedroom-1.svg"
+    amenities:
+      - "Double bed"
+      - "Built-in wardrobe"
+      - "Private balcony"
+      - "Floor climate control"
+      - "Panoramic view"
+
+  - name: "Second Master Bedroom"
+    description: >
+      Elegant master bedroom with refined furnishings and ample wardrobe
+      space. Offers a quiet and comfortable environment, perfect for
+      ensuring privacy to guests. Large windows ensure excellent natural
+      lighting.
+    image: "master-bedroom-2.svg"
+    amenities:
+      - "Double bed"
+      - "Large wardrobe"
+      - "Floor climate control"
+      - "Large windows"
+
+  - name: "First Twin Bedroom"
+    description: >
+      Spacious room with two single beds, ideal for children or friends.
+      Equipped with wardrobe, desk, and ample space to move around. The
+      bright and colorful environment creates a welcoming atmosphere.
+      Beds can be joined on request.
+    image: "twin-bedroom-1.svg"
+    amenities:
+      - "Two single beds"
+      - "Wardrobe"
+      - "Desk"
+      - "Floor climate control"
+
+  - name: "Second Twin Bedroom"
+    description: >
+      Second twin bedroom, configured identically to the first to ensure
+      balanced comfort to all guests. Perfect for children or as an
+      additional room for the group.
+    image: "twin-bedroom-2.svg"
+    amenities:
+      - "Two single beds"
+      - "Wardrobe"
+      - "Floor climate control"
+
+  - name: "Living Room"
+    description: >
+      Large open-space living room with distinct dining and relaxation
+      zones. The large sectional sofa can comfortably accommodate the
+      whole group, while the large smart TV and audio system ensure
+      entertainment for everyone. The space is designed for moments of
+      sharing and conviviality.
+    image: "living-room.svg"
+    amenities:
+      - "Sectional sofa"
+      - "Large smart TV"
+      - "Dining table for 8+ people"
+      - "Play area"
+      - "Floor climate control"
+
+  - name: "Kitchen"
+    description: >
+      Professional fully equipped kitchen, designed for cooking enthusiasts.
+      Features all necessary appliances, large stone countertop, central
+      island, and pantry. The kitchen can accommodate multiple people
+      simultaneously and includes everything needed to prepare meals for
+      large groups.
+    image: "kitchen.svg"
+    amenities:
+      - "XXL refrigerator with freezer"
+      - "5-burner induction cooktop"
+      - "Double electric oven"
+      - "Large capacity dishwasher"
+      - "Microwave"
+      - "Professional coffee machine"
+      - "Central island"
+      - "Pots and dishes for 10+ people"
+
+  - name: "Main Bathroom"
+    description: >
+      Main bathroom with shower, sink, and ample space. Includes washing
+      machine for maximum convenience. Elegant design with high-quality
+      finishes and premium courtesy set for a luxury experience.
+    image: "main-bathroom.svg"
+    amenities:
+      - "Shower"
+      - "Sink"
+      - "Washing machine"
+      - "Hairdryer"
+      - "Premium courtesy set"
+
+  - name: "Second Bathroom"
+    description: >
+      Complete second bathroom with shower and all comforts. Designed to
+      handle the needs of a large group, ensuring everyone has convenient
+      access to amenities without waiting.
+    image: "second-bathroom.svg"
+    amenities:
+      - "Shower"
+      - "Sink"
+      - "Hairdryer"
+      - "Towels provided"
+      - "Courtesy set"
+
+# -----------------------------------------------------------------------------
+# Features & Amenities
+# -----------------------------------------------------------------------------
+features:
+  - "High-speed WiFi"
+  - "Parking for 2 cars"
+  - "Private balcony"
+  - "Two full bathrooms"
+  - "Professional equipped kitchen"
+  - "Floor heating and cooling"
+  - "Large smart TV"
+  - "Washer and dryer"
+  - "Linens and towels for everyone"
+  - "Elevator"
+  - "Safe"
+  - "Cots and cribs available"
+
+# -----------------------------------------------------------------------------
+# Target Audience
+# -----------------------------------------------------------------------------
+idealFor:
+  - "Large families"
+  - "Groups of friends"
+  - "Family reunions"
+  - "Special events"
+  - "Extended stays"
+  - "Those seeking maximum space"
+
+# -----------------------------------------------------------------------------
+# SEO
+# -----------------------------------------------------------------------------
+seo:
+  title: "Deluxe Suite - 8 Guests"
+  description: "Deluxe suite with 4 bedrooms, 2 bathrooms, and professional kitchen. Perfect for large groups and families."
