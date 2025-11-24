@@ -5,7 +5,7 @@
  *
  * Images are loaded dynamically from: src/assets/images/{apartmentSlug}/
  */
-import { getImage } from 'astro:assets';
+import { getImage, type ImageMetadata } from 'astro:assets';
 import ImageCarousel from '~/components/widgets/ImageCarousel.astro';
 import { getApartmentsContent } from '~/utils/content';
 
