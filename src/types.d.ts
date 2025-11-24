@@ -234,6 +234,10 @@ export interface Pricing extends Omit<Headline, 'classes'>, Widget {
 export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
   testimonials?: Array<Testimonial>;
   callToAction?: CallToAction;
+  /** Optional reviews URL override (e.g., Booking.com reviews page) */
+  reviewsLink?: string;
+  /** Text for the "read more" link */
+  readMoreText?: string;
 }
 
 export interface Brands extends Omit<Headline, 'classes'>, Widget {
