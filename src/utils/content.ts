@@ -383,7 +383,15 @@ export interface ApartmentsContent {
   sections: {
     overview: { title: string };
     rooms: { title: string; subtitle: string };
-    gallery: { title: string; subtitle: string };
+    gallery: {
+      title: string;
+      subtitle: string;
+      photo_label?: string;
+      photos_label?: string;
+      available_label?: string;
+      fullscreen_hint?: string;
+      no_images?: string;
+    };
     services: {
       title: string;
       subtitle: string;
@@ -392,7 +400,21 @@ export interface ApartmentsContent {
     };
     reviews: { title: string; subtitle: string };
     benefits: { title: string; subtitle: string };
-    cta: { title: string; description: string; button: string };
+    cta: {
+      title: string;
+      description: string;
+      button: string;
+      email_button?: string;
+      email_subject?: string;
+      features?: {
+        response_title?: string;
+        response_subtitle?: string;
+        checkin_title?: string;
+        checkin_subtitle?: string;
+        price_title?: string;
+        price_subtitle?: string;
+      };
+    };
   };
   rooms_section?: {
     title: string;
